@@ -1,0 +1,137 @@
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Mengubah warna navbar saat di-hover */
+.navbar:hover {
+  background-color: #0056b3;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Efek hover pada nav-link */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f1c40f;
+}
+
+/* Dropdown */
+.navbar-nav .nav-item .dropdown-menu {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+/* Navbar-toggler icon */
+.navbar-toggler-icon {
+  background-color: #f1c40f;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Customizing the navbar for small screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-top: 10px;
+  }
+}
+
+.carousel-item img {
+  object-fit: cover; /* Mengatur gambar untuk menutupi area tanpa distorsi */
+  height: 450px; /* Menentukan tinggi gambar */
+  width: 100%; /* Membuat gambar memenuhi lebar layar */
+  border-radius: 10px; /* Menambahkan sudut melengkung */
+  transition: transform 0.5s ease; /* Efek transisi saat hover */
+}
+
+/* Efek hover pada gambar */
+.carousel-item img:hover {
+  transform: scale(1.1); /* Memperbesar gambar sedikit saat hover */
+}
+
+/* Desain caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Background setengah transparan */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 20px; /* Posisi caption di bawah gambar */
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 200px; /* Lebih kecil pada perangkat mobile */
+  }
+}
+
+/* Animasi dan efek hover */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.header-title {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Efek fadeIn untuk header */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Custom Overlay Style for Images */
+.position-relative {
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff800;
+}
+
+header .container {
+  box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black;
+  border-radius: 15px;
+}
